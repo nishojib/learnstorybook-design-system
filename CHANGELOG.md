@@ -1,3 +1,15 @@
+# v0.2.0 (Wed Apr 14 2021)
+
+#### 🚀 Enhancement
+
+- Added AvatarList and stories [#2](https://github.com/supremeboy18/learnstorybook-design-system/pull/2) ([@supremeboy18](https://github.com/supremeboy18))
+
+#### Authors: 1
+
+- Nur Islam ([@supremeboy18](https://github.com/supremeboy18))
+
+---
+
 # v0.1.1 (Wed Apr 14 2021)
 
 #### ⚠️ Pushed to `main`
