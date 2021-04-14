@@ -1,7 +1,7 @@
 {
-  "name": "learnstorybook-design-system-template",
+  "name": "@supremeboy18/learnstorybook-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -51,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.14",
     "@storybook/addon-a11y": "^6.2.7",
     "@storybook/addon-actions": "^6.2.7",
     "@storybook/addon-essentials": "^6.2.7",
@@ -58,10 +59,27 @@
     "@storybook/node-logger": "^6.2.7",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.7",
+    "auto": "^10.25.0",
     "chromatic": "^5.6.2",
+    "cross-env": "^7.0.3",
     "prettier": "^2.2.1"
   },
   "resolutions": {
     "babel-loader": "8.1.0"
-  }
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
+  "description": "Learn Storybook design system):Storybook design systems tutorial",
+  "main": "dist/index.js",
+  "repository": "https://github.com/supremeboy18/learnstorybook-design-system.git",
+  "author": "Nur Islam <nishojib@gmail.com>",
+  "license": "MIT"
 }
