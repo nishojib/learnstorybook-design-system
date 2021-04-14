@@ -1,5 +1,5 @@
-import React from "react";
-import { GlobalStyle } from "../src/shared/global";
+import React from 'react';
+import { GlobalStyle } from '../src/shared/global';
 
 // Global decorator to apply the styles to all stories
 export const decorators = [
@@ -12,7 +12,13 @@ export const decorators = [
 ];
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  a11y: {
+    // the target DOM element
+    element: '#root',
+    // sets the execution mode for the addon
+    manual: false,
+  },
   controls: {
     matchers: {
       color: /(background|color)$/i,
